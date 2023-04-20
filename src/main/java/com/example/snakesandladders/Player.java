@@ -3,6 +3,7 @@ package com.example.snakesandladders;
 import javafx.animation.PauseTransition;
 import javafx.animation.SequentialTransition;
 import javafx.animation.TranslateTransition;
+import javafx.scene.control.Alert;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.util.Duration;
@@ -54,8 +55,10 @@ public class Player {
     }
 
     boolean checkWinner(){
-        if(currentPosition==100)
+        if(currentPosition==100){
+            showDialogInformation("Player "+playerName+" Won the Game");
             return true;
+        }
         return false;
     }
 
@@ -70,6 +73,14 @@ public class Player {
 
     public Circle getCoin() {
         return coin;
+    }
+
+    private void showDialogInformation(String message){
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(null);
+        alert.setTitle("Winner");
+        alert.setContentText(message);
+        alert.showAndWait();
     }
 
 }
