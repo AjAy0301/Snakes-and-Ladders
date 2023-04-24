@@ -2,9 +2,9 @@
 This is a JavaFX-based application that brings the classic board game of Snakes and Ladders to life on your computer screen for two players only. The application features a colorful and engaging game board, complete with all the classic game elements, such as numbered squares, snakes and ladders, and player tokens. Users can take turns rolling dice and moving their tokens across the board, and the application keeps track of each player's progress and scores.
 
 How to Run
-1.	Clone the repository: git clone https://github.com/AjAy0301/Tic-Tac-Toe<br/>
+1.	Clone the repository: git clone https://github.com/AjAy0301/Snakes-and-Ladders<br/>
 2.	Open the project in your favorite IDE (e.g., Eclipse, IntelliJ IDEA)<br/>
-3.	Run the main class TicTacToeApplication<br/>
+3.	Run the main class SnakesLadders<br/>
 4.	The game window should appear, and you can start playing<br/>
 
 Technologies Used<br/> 
